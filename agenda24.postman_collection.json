@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "44f9aa75-43df-4e02-87cd-9ed967c1bea1",
+		"name": "Agenda24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23799202"
+	},
+	"item": [
+		{
+			"name": "Profesion",
+			"item": [
+				{
+					"name": "Listar Profesiones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjkxOTY3OTYsImV4cCI6MTcyOTI2ODc5NiwiZGF0YSI6eyJ1c2VyX2lkIjoxfX0.AEF1BNsmzL_SwMAA5xz_nGZn9jE6IQ623b_jrvVGwZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/profesion/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profesion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Profesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"Ciencias de la Computacion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/profesion/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profesion",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjkxOTc0NDcsImV4cCI6MTcyOTI2OTQ0NywiZGF0YSI6eyJ1c2VyX2lkIjoxfX0.LrRVRKp9Jsdr1Vr2XUTX9EGy8q_Q7DfXjHCjARcYK4o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/profesion/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profesion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n      \r\n        \"nombre\": \"Sistemas\",\r\n        \"created_at\": \"2024-10-14T18:52:15.000000Z\",\r\n        \"updated_at\": \"2024-10-14T18:52:15.000000Z\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/profesion/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profesion",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/agenda/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agenda",
+			"item": [
+				{
+					"name": "Listar Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar uno determinado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/agenda/21",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar recurso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ci\": \"56789\",\r\n    \"nombres\": \"Juan\",\r\n    \"apellidos\": \"Perez\",\r\n    \"celular\": \"+59155778899\",\r\n    \"email\": \"juan@perez.net\",\r\n    \"profesion_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/agenda/21",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar recurso Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ci\": \"56789\",\r\n    \"nombres\": \"Juan\",\r\n    \"apellidos\": \"Perez\",\r\n    \"celular\": \"+59155778899\",\r\n    \"email\": \"juan@perez.net\",\r\n    \"profesion_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/agenda/21",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar Agenda",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ci\": \"56789\",\r\n    \"nombres\": \"Juan\",\r\n    \"apellidos\": \"Perez\",\r\n    \"celular\": \"+5917777777\",\r\n    \"email\": \"juan@perez.net\",\r\n    \"profesion_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/agenda",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Autenticarse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"test@example.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
