@@ -37,6 +37,10 @@ php artisan make:middleware JwtMiddleware
 
 # Escribir codigo del midleware
 
+# Proteger las rutasincluyendo 
+->middleware(JwtMiddleware::class)
+
+
 
 
 

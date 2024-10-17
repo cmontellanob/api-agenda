@@ -5,6 +5,9 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
 
 class JwtMiddleware
 {
